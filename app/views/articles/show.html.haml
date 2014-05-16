@@ -1,0 +1,8 @@
+.article
+  %p= link_to @article.title, @article.link, target: "_blank"
+  %p= @article.critique
+  %p= @article.created_at
+  %p= @article.user
+
+= link_to 'Edit', edit_article_path(@article)
+= link_to 'Back', articles_path

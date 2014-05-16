@@ -47,3 +47,7 @@ end
 gem 'devise'
 
 gem 'haml'
+
+gem 'validate_url'
+
+gem 'simple_form'

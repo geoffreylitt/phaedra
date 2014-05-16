@@ -1,0 +1,9 @@
+=link_to "Submit a new article", new_article_path
+
+- @articles.each do |art|
+  .article
+    %p= link_to art.title, art.link, target: "_blank"
+    %p= art.critique
+    %p= art.created_at
+    %p= art.user
+    %p= link_to "View article page", art
