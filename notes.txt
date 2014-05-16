@@ -1,13 +1,14 @@
 Article
 - title
 - link
-- comment
+- critique
 - section_id
 
 User (provided by devise)
 
 Comment
+- text
 - article_id
-- sequence
 
 Section
+- name
