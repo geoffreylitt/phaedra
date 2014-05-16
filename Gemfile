@@ -51,3 +51,5 @@ gem 'haml'
 gem 'validate_url'
 
 gem 'simple_form'
+
+gem 'bootstrap-sass'

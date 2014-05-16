@@ -7,6 +7,7 @@ Phaedra::Application.routes.draw do
   root 'articles#index'
 
   resources :articles
+  resources :users, only: [:show, :index]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

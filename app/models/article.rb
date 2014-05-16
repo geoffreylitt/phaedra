@@ -10,4 +10,6 @@ class Article < ActiveRecord::Base
   validates :critique, length: { minimum: 140 }
 
   validates :link, url: true
+
+  validates :user, presence: true
 end

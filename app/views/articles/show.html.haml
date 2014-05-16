@@ -1,8 +1,12 @@
 .article
-  %p= link_to @article.title, @article.link, target: "_blank"
+  %p= link_to @article.title, @article.link
   %p= @article.critique
   %p= @article.created_at
-  %p= @article.user
+  %p= link_to @article.user.name, @article.user
 
 = link_to 'Edit', edit_article_path(@article)
 = link_to 'Back', articles_path
+
+-@article.comments.each do |comment|
+  .comment
+    %p= comment.user.name
