@@ -1,0 +1,13 @@
+Article
+- title
+- link
+- comment
+- section_id
+
+User (provided by devise)
+
+Comment
+- article_id
+- sequence
+
+Section
